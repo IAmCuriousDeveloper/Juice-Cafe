@@ -7,6 +7,7 @@ export class Inventory extends Component {
       <div className='inventory'>
         <h2>Inventory</h2>
         <AddJuiceForm addJuice = {this.props.addJuice}/>
+        <button onClick={this.props.loadSampleJuices}> Load sample juices </button>
       </div>
     )
   }

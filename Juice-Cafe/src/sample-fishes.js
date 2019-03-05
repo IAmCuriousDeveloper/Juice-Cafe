@@ -1,84 +1,181 @@
 // This is just some sample data so you don't have to think of your own!
-const fishes = {
-  fish1: {
-    name: "Pacific Halibut",
-    image: "/images/hali.jpg",
+const juices = {
+  juice1: {
+    name: "PineApple",
+    image: "/images/pineapplejuice.jpg",
     desc:
-      "Everyone’s favorite white fish. We will cut it to the size you need and ship it.",
-    price: 1724,
+      "Delightfull & Excellent for lose weight ",
+    price: 40,
     status: "available"
   },
 
-  fish2: {
-    name: "Lobster",
-    image: "/images/lobster.jpg",
+  juice2: {
+    name: "Watermelon",
+    image: "/images/watermelon juice.jpg",
     desc:
-      "These tender, mouth-watering beauties are a fantastic hit at any dinner party.",
-    price: 3200,
+      "Only fruit juice which contains all the nutrients",
+    price: 40,
     status: "available"
   },
 
-  fish3: {
-    name: "Sea Scallops",
-    image: "/images/scallops.jpg",
+  juice3: {
+    name: "Mosambi",
+    image: "/images/sweetlime juice.jpg",
     desc:
-      "Big, sweet and tender. True dry-pack scallops from the icey waters of Alaska. About 8-10 per pound",
-    price: 1684,
-    status: "unavailable"
-  },
-
-  fish4: {
-    name: "Mahi Mahi",
-    image: "/images/mahi.jpg",
-    desc:
-      "Lean flesh with a mild, sweet flavor profile, moderately firm texture and large, moist flakes. ",
-    price: 1129,
+      "This sweetlime will refresh you, it will fill you with lots of vitamin c ",
+    price: 40,
     status: "available"
   },
 
-  fish5: {
-    name: "King Crab",
-    image: "/images/crab.jpg",
+  juice4: {
+    name: "Orange",
+    image: "/images/orangejuice.jpg",
     desc:
-      "Crack these open and enjoy them plain or with one of our cocktail sauces",
+      "These sweet Orange juice conatins much needed vitamin c for your body ",
+    price: 40,
+    status: "available"
+  },
+
+  juice5: {
+    name: "MixFruit",
+    image: "/images/mixfruit.jpg",
+    desc:
+      "Sip this and enjoy, Who doesn't like mixed fruits ? ",
     price: 4234,
     status: "available"
   },
 
-  fish6: {
-    name: "Atlantic Salmon",
-    image: "/images/salmon.jpg",
+  juice6: {
+    name: "Sunrise",
+    image: "/images/sunrise.jpg",
     desc:
-      "This flaky, oily salmon is truly the king of the sea. Bake it, grill it, broil it...as good as it gets!",
-    price: 1453,
+      "Never heard of this ? then you should definetely try this coz its Glowing Golden",
+    price: 40,
     status: "available"
   },
 
-  fish7: {
-    name: "Oysters",
-    image: "/images/oysters.jpg",
-    desc: "A soft plump oyster with a sweet salty flavor and a clean finish.",
-    price: 2543,
+  juice7: {
+    name: "pinelime",
+    image: "/images/pinelime.jpg",
+    desc: "A healthy mixture of pineapple and lime '2 ka maza'",
+    price: 40,
     status: "available"
   },
 
-  fish8: {
-    name: "Mussels",
-    image: "/images/mussels.jpg",
+  juice8: {
+    name: "Pomegranate",
+    image: "/images/anaar juice.jpg",
     desc:
-      "The best mussels from the Pacific Northwest with a full-flavored and complex taste.",
-    price: 425,
+      "Nothing can replace this in terms of micro-nutrients ,helps regulate your blood flow",
+    price: 50,
     status: "available"
   },
 
-  fish9: {
-    name: "Jumbo Prawns",
-    image: "/images/prawns.jpg",
+  juice9: {
+    name: "Banana Shake",
+    image: "/images/banana shake.png",
     desc:
-      "With 21-25 two bite prawns in each pound, these sweet morsels are perfect for shish-kabobs.",
-    price: 2250,
+      "Whether you are gym guy or office one you need this healthy shake",
+    price: 30,
     status: "available"
   }
+  ,
+  juice10: {
+    name: "Mango Shake",
+    image: "/images/mango shake.jpg",
+    desc:
+      "",
+    price: 40,
+    status: ""
+  },
+  juice11: {
+    name: "Choco Banana Shake",
+    image: "/images/banana choco shake.jpg",
+    desc:
+      "",
+    price: 40,
+    status: ""
+  },
+  juice12: {
+    name: "Chocolate shake",
+    image: "/images/chocolate shake.jpg",
+    desc:
+      "",
+    price: 50,
+    status: ""
+  },
+  juice13: {
+    name: "chiku shake",
+    image: "/images/chiku shake.jpg",
+    desc:
+      "",
+    price: 50,
+    status: ""
+  },
+  juice14: {
+    name: "Raat Rani shake",
+    image: "/images/raatrani.jpg",
+    desc:
+      "",
+    price: 50,
+    status: ""
+  },
+  juice15: {
+    name: "PineApple shake",
+    image: "/images/pineapple shake.jpg",
+    desc:
+      "",
+    price: 60,
+    status: ""
+  },
+  juice16: {
+    name: "butter scotch shake",
+    image: "/images/.jpg",
+    desc:
+      "",
+    price: 60,
+    status: ""
+  },
+  juice17: {
+    name: "Thandai",
+    image: "/images/.jpg",
+    desc:
+      "",
+    price: 60,
+    status: ""
+  },
+  juice18: {
+    name: "Oreo shake",
+    image: "/images/.jpg",
+    desc:
+      "",
+    price: 60,
+    status: ""
+  },
+  juice19: {
+    name: "Strawberry shake",
+    image: "/images/.jpg",
+    desc:
+      "",
+    price: 60,
+    status: ""
+  },
+  juice20: {
+    name: "Anjeer Badam",
+    image: "/images/.jpg",
+    desc:
+      "",
+    price: 80,
+    status: ""
+  },
+  juice21: {
+    name: "kaju anjeer shake",
+    image: "/images/kaju anjeer shake.jpg",
+    desc:
+      "",
+    price: 80,
+    status: ""
+  },
 };
 
-export default fishes;
+export default juices;
