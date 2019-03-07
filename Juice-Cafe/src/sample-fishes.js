@@ -64,7 +64,7 @@ const juices = {
 
   juice8: {
     name: "Pomegranate",
-    image: "/images/anaar juice.jpg",
+    image: "/images/anaar juice.jpeg",
     desc:
       "Nothing can replace this in terms of micro-nutrients ,helps regulate your blood flow",
     price: 50,
@@ -130,7 +130,7 @@ const juices = {
   },
   juice16: {
     name: "butter scotch shake",
-    image: "/images/.jpg",
+    image: "/images/butterscotch.jpg",
     desc:
       "",
     price: 60,
@@ -138,7 +138,7 @@ const juices = {
   },
   juice17: {
     name: "Thandai",
-    image: "/images/.jpg",
+    image: "/images/thandai shake.jpg",
     desc:
       "",
     price: 60,
@@ -146,7 +146,7 @@ const juices = {
   },
   juice18: {
     name: "Oreo shake",
-    image: "/images/.jpg",
+    image: "/images/oreo shake.jpg",
     desc:
       "",
     price: 60,
@@ -154,7 +154,7 @@ const juices = {
   },
   juice19: {
     name: "Strawberry shake",
-    image: "/images/.jpg",
+    image: "/images/strawberry shake.jpg",
     desc:
       "",
     price: 60,
@@ -162,7 +162,7 @@ const juices = {
   },
   juice20: {
     name: "Anjeer Badam",
-    image: "/images/.jpg",
+    image: "/images/anjeer badam shake.png",
     desc:
       "",
     price: 80,

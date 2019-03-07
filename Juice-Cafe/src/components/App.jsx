@@ -3,6 +3,7 @@ import Header from "./Header";
 import Inventory from "./Inventory";
 import Order from "./Order";
 import sampleJuices from "../sample-fishes"
+import Juice from './Juice'
 
 export class App extends Component {
   state ={
@@ -20,7 +21,7 @@ export class App extends Component {
       juices
     })
   }
-
+  //loading sample juices to our view 
   loadSampleJuices = () => {
     this.setState({juices : sampleJuices})
   }
@@ -30,6 +31,9 @@ export class App extends Component {
       <div className="catch-of-the-day">
         <div className="menu">
           <Header tagline='Refuel Your Soul'/>
+          <ul className='fishes'>
+          {Object.keys(this.state.juices).map(key=><Juice details = {this.state.juices[key]}/>)}
+          </ul>
         </div>
         <Order />
         <Inventory loadSampleJuices = {this.loadSampleJuices} addJuice= {this.addJuice} />
