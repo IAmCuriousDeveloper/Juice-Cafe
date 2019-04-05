@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 
-export class Juice extends Component {
+class Juice extends Component {
   render() {
     const { image, name, desc, status, price } = this.props.details;
     const isAvailable = status === "available";
@@ -12,8 +12,10 @@ export class Juice extends Component {
           <span> Rs {price}</span>
         </h3>
         <p>{desc}</p>
-        <button disabled={!isAvailable}>
-          //using the ternary just for the unavailable animation
+        <button
+          disabled={!isAvailable}
+          onClick={() => this.props.addToOrder(this.props.index)}
+        >
           {status === "available" ? "Addthis" : "unavailable"}
         </button>
       </li>

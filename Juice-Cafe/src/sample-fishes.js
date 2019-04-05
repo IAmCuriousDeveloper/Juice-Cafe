@@ -38,7 +38,7 @@ const juices = {
     name: "MixFruit",
     image: "/images/mixfruit.jpg",
     desc: "Sip this and enjoy, Who doesn't like mixed fruits ? ",
-    price: 4234,
+    price: 40,
     status: "available"
   },
 

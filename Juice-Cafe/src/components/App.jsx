@@ -26,6 +26,17 @@ class App extends Component {
     this.setState({ juices: sampleJuices });
   };
 
+  addToOrder = key => {
+    //1.taking a copy of state
+    const order = { ...this.state.order };
+    //2.add or update the order
+    order[key] = order[key] + 1 || 1;
+    //setState the order
+    this.setState({
+      order
+    });
+  };
+
   render() {
     return (
       <div className='catch-of-the-day'>
@@ -33,11 +44,17 @@ class App extends Component {
           <Header tagline='Refuel Your Soul' />
           <ul className='fishes'>
             {Object.keys(this.state.juices).map(key => (
-              <Juice key={key} details={this.state.juices[key]} />
+              <Juice
+                index={key}
+                key={key}
+                details={this.state.juices[key]}
+                addToOrder={this.addToOrder}
+              />
             ))}
           </ul>
         </div>
-        <Order />
+        {/* we can use the spread operator to pass everything like ...this.state*/}
+        <Order juices={this.state.juices} order={this.state.order} />
         <Inventory
           loadSampleJuices={this.loadSampleJuices}
           addJuice={this.addJuice}
