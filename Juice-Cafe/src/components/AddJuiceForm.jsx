@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 
-export class AddJuiceForm extends Component {
+class AddJuiceForm extends Component {
   nameRef = React.createRef();
   priceRef = React.createRef();
   statusRef = React.createRef();
@@ -23,30 +23,30 @@ export class AddJuiceForm extends Component {
 
   render() {
     return (
-      <form className="fish-edit" onSubmit={this.createJuice}>
+      <form className='fish-edit' onSubmit={this.createJuice}>
         <input
-          type="text"
+          type='text'
           ref={this.nameRef}
-          name="name"
-          placeholder="Name"
+          name='name'
+          placeholder='Name'
           required
         />
         <input
-          type="number"
-          name="price"
+          type='number'
+          name='price'
           ref={this.priceRef}
-          placeholder="Price"
+          placeholder='Price'
           required
         />
-        <select name="status" ref={this.statusRef} required>
-          <option value="available">Fresh</option>
-          <option value="unavailable">Added Preservatives</option>
+        <select name='status' ref={this.statusRef} required>
+          <option value='available'>Fresh</option>
+          <option value='unavailable'>Added Preservatives</option>
         </select>
 
-        <textarea name="desc" ref={this.descRef} placeholder="desc" />
-        <input name="image" type= "text" placeholder="image" ref={this.imgRef} />
+        <textarea name='desc' ref={this.descRef} placeholder='desc' />
+        <input name='image' type='text' placeholder='image' ref={this.imgRef} />
 
-        <button type="submit">+ Add Juice/Snacks </button>
+        <button type='submit'>+ Add Juice/Snacks </button>
       </form>
     );
   }

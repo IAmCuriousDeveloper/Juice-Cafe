@@ -3,17 +3,15 @@ const juices = {
   juice1: {
     name: "PineApple",
     image: "/images/pineapplejuice.jpg",
-    desc:
-      "Delightfull & Excellent for lose weight ",
+    desc: "Delightfull & Excellent for lose weight ",
     price: 40,
-    status: "available"
+    status: "unavailable"
   },
 
   juice2: {
     name: "Watermelon",
     image: "/images/watermelon juice.jpg",
-    desc:
-      "Only fruit juice which contains all the nutrients",
+    desc: "Only fruit juice which contains all the nutrients",
     price: 40,
     status: "available"
   },
@@ -39,8 +37,7 @@ const juices = {
   juice5: {
     name: "MixFruit",
     image: "/images/mixfruit.jpg",
-    desc:
-      "Sip this and enjoy, Who doesn't like mixed fruits ? ",
+    desc: "Sip this and enjoy, Who doesn't like mixed fruits ? ",
     price: 4234,
     status: "available"
   },
@@ -74,108 +71,101 @@ const juices = {
   juice9: {
     name: "Banana Shake",
     image: "/images/banana shake.png",
-    desc:
-      "Whether you are gym guy or office one you need this healthy shake",
+    desc: "Whether you are gym guy or office one you need this healthy shake",
     price: 30,
     status: "available"
-  }
-  ,
+  },
   juice10: {
     name: "Mango Shake",
     image: "/images/mango shake.jpg",
-    desc:
-      "",
+    desc: "The king of shake with wide variety of mangoes",
     price: 40,
-    status: ""
+    status: "available"
   },
   juice11: {
-    name: "Choco Banana Shake",
+    name: "Choco Banana",
     image: "/images/banana choco shake.jpg",
     desc:
-      "",
+      "With the delightful flavour of dark chocolate and healthy banana this is a wounderful combination.",
     price: 40,
-    status: ""
+    status: "available"
   },
   juice12: {
     name: "Chocolate shake",
     image: "/images/chocolate shake.jpg",
-    desc:
-      "",
+    desc: "Everyone loves chocolate shake. ",
     price: 50,
-    status: ""
+    status: "available"
   },
   juice13: {
     name: "chiku shake",
     image: "/images/chiku shake.jpg",
     desc:
-      "",
+      "Its one of the unique indian fruit which suits perfect for the shake",
     price: 50,
-    status: ""
+    status: "available"
   },
   juice14: {
     name: "Raat Rani shake",
     image: "/images/raatrani.jpg",
-    desc:
-      "",
+    desc: "",
     price: 50,
-    status: ""
+    status: "available"
   },
   juice15: {
     name: "PineApple shake",
     image: "/images/pineapple shake.jpg",
-    desc:
-      "",
+    desc: "A perfect shake for the gym freak, increase immunity too ",
     price: 60,
-    status: ""
+    status: "available"
   },
   juice16: {
-    name: "butter scotch shake",
+    name: "Butter scotch",
     image: "/images/butterscotch.jpg",
     desc:
-      "",
+      "If you are a butter scoth lover you got to love this one.this buttery shake will melt in your mouth",
     price: 60,
-    status: ""
+    status: "available"
   },
   juice17: {
     name: "Thandai",
     image: "/images/thandai shake.jpg",
     desc:
-      "",
+      "This indian drink is remarkable for summer.Removes your warmth instantly",
     price: 60,
-    status: ""
+    status: "available"
   },
   juice18: {
     name: "Oreo shake",
     image: "/images/oreo shake.jpg",
     desc:
-      "",
+      "If you are a kid or the adult orea should be your favourite this mouth watery shake is only for you",
     price: 60,
-    status: ""
+    status: "available"
   },
   juice19: {
-    name: "Strawberry shake",
+    name: "Strawberry",
     image: "/images/strawberry shake.jpg",
     desc:
-      "",
+      "Yes you heard right its Strawberry and we got this too,fresh and healthy",
     price: 60,
-    status: ""
+    status: "available"
   },
   juice20: {
     name: "Anjeer Badam",
     image: "/images/anjeer badam shake.png",
     desc:
-      "",
+      "The goodness of anjeer and almond will not only refersh you but also fill you body with energy ",
     price: 80,
-    status: ""
+    status: "available"
   },
   juice21: {
-    name: "kaju anjeer shake",
+    name: "kaju anjeer",
     image: "/images/kaju anjeer shake.jpg",
-    desc:
-      "",
+    desc: "The goodness of",
     price: 80,
-    status: ""
-  },
+    status: "available"
+  }
 };
 
 export default juices;
