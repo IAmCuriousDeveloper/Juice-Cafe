@@ -12,11 +12,29 @@ class App extends Component {
   };
 
   componentDidMount() {
-    this.ref = base.syncState(`${this.props.match.params.storeId}/juices`, {
+    //reinstate the local storage
+    const localStorageRef = localStorage.getItem(
+      this.props.match.params.storeid
+    );
+    console.log(localStorageRef);
+    if (localStorageRef) {
+      this.setState({
+        order: JSON.parse(localStorageRef)
+      });
+    }
+    this.ref = base.syncState(`${this.props.match.params.storeid}/juices`, {
       context: this,
       state: "juices"
     });
   }
+
+  componentDidUpdate() {
+    localStorage.setItem(
+      this.props.match.params.storeid,
+      JSON.stringify(this.state.order)
+    ); //key value pair
+  }
+
   componentWillUnmount() {
     base.removeBinding(this.ref);
   }

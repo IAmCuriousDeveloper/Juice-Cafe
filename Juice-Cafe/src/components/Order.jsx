@@ -4,7 +4,9 @@ export class Order extends Component {
   renderOrder = key => {
     const juice = this.props.juices[key];
     const count = this.props.order[key];
-    const isAvailable = juice.status === "available";
+    const isAvailable = juice && juice.status === "available";
+    //making sure that juice is available from the firebase
+    if (!juice) return null;
     if (!isAvailable) {
       return (
         <li key={key}>
