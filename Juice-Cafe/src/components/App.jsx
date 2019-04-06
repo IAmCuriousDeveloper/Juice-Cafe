@@ -4,12 +4,22 @@ import Inventory from "./Inventory";
 import Order from "./Order";
 import sampleJuices from "../sample-fishes";
 import Juice from "./Juice";
-
+import base from "../base";
 class App extends Component {
   state = {
     juices: {},
     order: {}
   };
+
+  componentDidMount() {
+    this.ref = base.syncState(`${this.props.match.params.storeId}/juices`, {
+      context: this,
+      state: "juices"
+    });
+  }
+  componentWillUnmount() {
+    base.removeBinding(this.ref);
+  }
 
   addJuice = juice => {
     //making copy of juice coz state should be immutable
