@@ -12,11 +12,10 @@ class App extends Component {
   };
 
   componentDidMount() {
-    //reinstate the local storage
+    //checking local storage the local storage
     const localStorageRef = localStorage.getItem(
       this.props.match.params.storeid
     );
-    console.log(localStorageRef);
     if (localStorageRef) {
       this.setState({
         order: JSON.parse(localStorageRef)
@@ -64,6 +63,14 @@ class App extends Component {
       order
     });
   };
+  updateJuice = (key, updatedJuice) => {
+    //1. taking copy of the juices
+    const juices = { ...this.state.juices };
+    //2 update that state
+    juices[key] = updatedJuice;
+    //3 setting state
+    this.setState({ juices });
+  };
 
   render() {
     return (
@@ -86,6 +93,8 @@ class App extends Component {
         <Inventory
           loadSampleJuices={this.loadSampleJuices}
           addJuice={this.addJuice}
+          juices={this.state.juices}
+          updateJuice={this.updateJuice}
         />
       </div>
     );

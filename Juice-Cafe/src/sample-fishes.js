@@ -3,7 +3,7 @@ const juices = {
   juice1: {
     name: "PineApple",
     image: "/images/pineapplejuice.jpg",
-    desc: "Delightfull & Excellent for lose weight ",
+    desc: "Delightful & Excellent for lose weight ",
     price: 40,
     status: "unavailable"
   },
