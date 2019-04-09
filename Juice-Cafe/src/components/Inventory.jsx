@@ -13,6 +13,7 @@ class Inventory extends Component {
             updateJuice={this.props.updateJuice}
             key={key}
             juice={this.props.juices[key]}
+            deleteJuice={this.props.deleteJuice}
           />
         ))}
         <AddJuiceForm addJuice={this.props.addJuice} />

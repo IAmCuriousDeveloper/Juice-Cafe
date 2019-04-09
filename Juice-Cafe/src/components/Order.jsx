@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { TransitionGroup, CSSTransition } from "react-transition-group";
 
 export class Order extends Component {
   renderOrder = key => {
@@ -9,16 +10,42 @@ export class Order extends Component {
     if (!juice) return null;
     if (!isAvailable) {
       return (
-        <li key={key}>
-          Sorry {juice ? juice.name : "juice"} is no longer available
-        </li>
+        <CSSTransition
+          classNames='order'
+          key={key}
+          timeout={{ enter: 5000, exit: 5000 }}
+        >
+          <li key={key}>
+            Sorry {juice ? juice.name : "juice"} is no longer available
+          </li>
+        </CSSTransition>
       );
     }
     return (
-      <li key={key}>
-        {count} qty {juice.name}
-        {count * juice.price}
-      </li>
+      <CSSTransition
+        classNames='order'
+        key={key}
+        timeout={{ enter: 250, exit: 250 }}
+      >
+        <li key={key}>
+          <span>
+            <TransitionGroup component='span' classNames='count'>
+              <CSSTransition
+                classNames='count'
+                key={count}
+                timeout={{ enter: 5000, exit: 5000 }}
+              >
+                <span>{count}</span>
+              </CSSTransition>
+            </TransitionGroup>
+            qty {juice.name}
+            {count * juice.price}
+            <button onClick={() => this.props.removeFromOrder(key)}>
+              &times;
+            </button>
+          </span>
+        </li>
+      </CSSTransition>
     );
   };
   render() {
@@ -35,7 +62,9 @@ export class Order extends Component {
     return (
       <div className='order-wrap'>
         <h2>order</h2>
-        <ul className='order'>{orderIds.map(this.renderOrder)}</ul>
+        <TransitionGroup component='ul' className='order'>
+          {orderIds.map(this.renderOrder)}
+        </TransitionGroup>
         <div className='total'>
           Total:
           <strong>Rs {total}</strong>

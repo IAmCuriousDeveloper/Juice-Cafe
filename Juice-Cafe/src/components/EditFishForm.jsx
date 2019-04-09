@@ -50,6 +50,9 @@ class EditFishForm extends Component {
           onChange={this.handleChange}
           value={this.props.juice.image}
         />
+        <button onClick={() => this.props.deleteJuice(this.props.index)}>
+          Remove Item{" "}
+        </button>
       </div>
     );
   }

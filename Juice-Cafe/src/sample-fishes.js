@@ -1,11 +1,11 @@
-// This is just some sample data so you don't have to think of your own!
+// juices for the juice cafe shop
 const juices = {
   juice1: {
     name: "PineApple",
     image: "/images/pineapplejuice.jpg",
     desc: "Delightful & Excellent for lose weight ",
     price: 40,
-    status: "unavailable"
+    status: "available"
   },
 
   juice2: {

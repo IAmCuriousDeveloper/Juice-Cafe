@@ -72,6 +72,25 @@ class App extends Component {
     this.setState({ juices });
   };
 
+  deleteJuice = key => {
+    //1 getting state copy
+    const juices = { ...this.state.juices };
+    //2.delete the juice
+    juices[key] = null;
+
+    //3.setting state
+    this.setState({ juices });
+  };
+  removeFromOrder = key => {
+    //1 getting state copy
+    const order = { ...this.state.order };
+    //2.delete the juice
+    delete order[key];
+
+    //3.setting state
+    this.setState({ order });
+  };
+
   render() {
     return (
       <div className='catch-of-the-day'>
@@ -89,12 +108,17 @@ class App extends Component {
           </ul>
         </div>
         {/* we can use the spread operator to pass everything like ...this.state*/}
-        <Order juices={this.state.juices} order={this.state.order} />
+        <Order
+          juices={this.state.juices}
+          removeFromOrder={this.removeFromOrder}
+          order={this.state.order}
+        />
         <Inventory
           loadSampleJuices={this.loadSampleJuices}
           addJuice={this.addJuice}
           juices={this.state.juices}
           updateJuice={this.updateJuice}
+          deleteJuice={this.deleteJuice}
         />
       </div>
     );
