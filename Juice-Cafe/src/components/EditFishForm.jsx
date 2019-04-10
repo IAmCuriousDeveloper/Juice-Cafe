@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import PropTypes from "prop-types";
 
 class EditFishForm extends Component {
   //its very handy we are using computed property names to change the
@@ -11,6 +12,19 @@ class EditFishForm extends Component {
     };
     this.props.updateJuice(this.props.index, updatedJuice);
     console.log(updatedJuice);
+  };
+
+  static propTypes = {
+    juice: PropTypes.shape({
+      image: PropTypes.string,
+      name: PropTypes.string,
+      price: PropTypes.number,
+      desc: PropTypes.string,
+      status: PropTypes.string
+    }),
+    updateJuice: PropTypes.func,
+    deleteJuice: PropTypes.func,
+    index: PropTypes.string
   };
 
   render() {

@@ -27,7 +27,7 @@
   padding: 0;
 }
 .count-enter {
-  background: #f00;
+  background: #000;
   -webkit-transition: 1s;
   transition: 1s;
   -webkit-transform: translateY(100%);
@@ -39,7 +39,7 @@
           transform: translateY(0);
 }
 .count-exit {
-  background: #000;
+  background: #008000;
   -webkit-transform: translateY(0);
           transform: translateY(0);
   -webkit-transition: 1s;
@@ -50,8 +50,8 @@
 }
 .count-exit.count-exit-active {
   background: #008000;
-  -webkit-transform: translateY(-100%) scale(3);
-          transform: translateY(-100%) scale(3);
+  -webkit-transform: translateY(-100%);
+          transform: translateY(-100%);
 }
 @font-face {
   font-family: "haymakerregular";

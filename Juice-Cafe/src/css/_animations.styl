@@ -27,7 +27,7 @@
 
 
 .count-enter
-  background: red
+  background: black
   transition 1.0s
   transform translateY(100%)
   &.count-enter-active
@@ -35,12 +35,12 @@
     transform translateY(0)
 
 .count-exit
-  background: black
+  background: green
   transform translateY(0)
   transition 1.0s
   position absolute
   left 0
   bottom 0
-  &.count-exit-active
+  &.count-exit-active 
     background green
-    transform translateY(-100%) scale(3)
+    transform translateY(-100%)

@@ -5,10 +5,15 @@ import Order from "./Order";
 import sampleJuices from "../sample-fishes";
 import Juice from "./Juice";
 import base from "../base";
+import PropTypes from "prop-types";
 class App extends Component {
   state = {
     juices: {},
     order: {}
+  };
+
+  static propTypes = {
+    match: PropTypes.object.isRequired
   };
 
   componentDidMount() {

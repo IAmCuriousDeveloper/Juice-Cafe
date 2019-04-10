@@ -1,11 +1,15 @@
 import React, { Component } from "react";
-
+import PropTypes from "prop-types";
 class AddJuiceForm extends Component {
   nameRef = React.createRef();
   priceRef = React.createRef();
   statusRef = React.createRef();
   descRef = React.createRef();
   imgRef = React.createRef();
+
+  static propTypes = {
+    addJuice: PropTypes.func
+  };
 
   createJuice = event => {
     //stopping form from submitting

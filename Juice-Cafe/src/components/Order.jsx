@@ -1,7 +1,13 @@
 import React, { Component } from "react";
 import { TransitionGroup, CSSTransition } from "react-transition-group";
+import PropTypes from "prop-types";
 
 export class Order extends Component {
+  static propTypes = {
+    juices: PropTypes.object,
+    order: PropTypes.object,
+    removeFromOrder: PropTypes.func
+  };
   renderOrder = key => {
     const juice = this.props.juices[key];
     const count = this.props.order[key];
@@ -13,7 +19,7 @@ export class Order extends Component {
         <CSSTransition
           classNames='order'
           key={key}
-          timeout={{ enter: 5000, exit: 5000 }}
+          timeout={{ enter: 1000, exit: 1000 }}
         >
           <li key={key}>
             Sorry {juice ? juice.name : "juice"} is no longer available
@@ -25,7 +31,7 @@ export class Order extends Component {
       <CSSTransition
         classNames='order'
         key={key}
-        timeout={{ enter: 250, exit: 250 }}
+        timeout={{ enter: 1000, exit: 1000 }}
       >
         <li key={key}>
           <span>
@@ -33,7 +39,7 @@ export class Order extends Component {
               <CSSTransition
                 classNames='count'
                 key={count}
-                timeout={{ enter: 5000, exit: 5000 }}
+                timeout={{ enter: 1000, exit: 1000 }}
               >
                 <span>{count}</span>
               </CSSTransition>
