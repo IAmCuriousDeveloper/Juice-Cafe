@@ -21,6 +21,7 @@ class Login extends Component {
           Log in with Github{" "}
         </button>
         <p>authentication is under-construction</p>
+        <h3>Made by Prashant Rawal for React-beginners</h3>
       </nav>
     );
   }
